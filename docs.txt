@@ -1,0 +1,31 @@
+Planificando una api
+
+Recurso User
+
+dominio: 	http://127.0.0.1:42512/
+			http://localhost:42512/
+
+											protocolo 	-> endpoint
+1. obtener una lista de todos los usuarios: GET 		-> /api/v02/users
+	GET -> http://127.0.0.1:42512/api/v02/users
+
+2. crear un usuario nuevo:					POST		-> /api/v02/users
+	POST -> http://127.0.0.1:42512/api/v02/users
+
+3. obtener un solo usuario:					GET			-> /api/v02/users/:userID
+	GET -> http://127.0.0.1:42512/api/v02/users/:userID
+
+4. actualizar un solo usuario: 				POST		-> /api/v02/users/:userID
+	PUT -> http://127.0.0.1:42512/api/v02/users/:userID
+	PATCH -> http://127.0.0.1:42512/api/v02/users/:userID
+
+5. eliminar un solo usuario:				DELETE		-> /api/v02/users/:userID
+	DELETE -> http://127.0.0.1:42512/api/v02/users/:userID
+
+1. Install commandbox-migrations
+2. migrate init
+3. Install commandbox-dotenv
+4. Update the existing /.env file.
+5. commandbox (reload or r)
+6. migrate Install
+7. migrate create create_users_table
